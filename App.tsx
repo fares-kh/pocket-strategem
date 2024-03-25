@@ -1,10 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
@@ -17,7 +10,10 @@ import {
   View,
 } from 'react-native';
 
-import Button from './Button';
+import {
+  Button,
+  MainScreen
+} from './components';
 
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
@@ -67,7 +63,7 @@ function App(): React.JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        {/* <Header /> */}
+        <MainScreen/>
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
