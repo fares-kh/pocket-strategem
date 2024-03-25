@@ -17,6 +17,10 @@ import {
 
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
+export const enum Settings {
+  TOTAL_STRATEGEMS = 2
+}
+
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
