@@ -7,10 +7,28 @@ enum Strategems {
     STALWART = "STALWART",
 }
 
+const IconContainer = styled.View`
+    display: block;
+    align-items: center;
+    height: 50px;
+`;
+
+const Arrows = styled.View`
+    display: inline-grid;
+    height: 20px;
+`;
+
 const MainScreen = () => {
     return (
         <React.Fragment>
-            <Text>Icons</Text>
+            <IconContainer>
+                <Text>Icons</Text>
+            </IconContainer>
+            <Arrows>
+                <Text>{'\u2192'}</Text>
+                <Text>{'\u2192'}</Text>
+                <Text>{'\u2192'}</Text>
+            </Arrows>
         </React.Fragment>
     )
 }

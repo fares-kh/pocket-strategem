@@ -64,10 +64,10 @@ function App(): React.JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
+      <MainScreen/>
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <MainScreen/>
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
