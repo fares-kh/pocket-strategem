@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 import styled from 'styled-components/native'
 
 enum Strategems {
@@ -7,27 +7,25 @@ enum Strategems {
     STALWART = "STALWART",
 }
 
-const IconContainer = styled.View`
-    display: block;
+const StrategemList = styled.View`
+    display: flex;
     align-items: center;
     height: 50px;
 `;
 
 const Arrows = styled.View`
-    display: inline-grid;
     height: 20px;
+    align-items: center;
 `;
 
 const MainScreen = () => {
     return (
         <React.Fragment>
-            <IconContainer>
-                <Text>Icons</Text>
-            </IconContainer>
+            <StrategemList>
+                <View style={{backgroundColor: 'black', height: 50, width: 50}}></View>
+            </StrategemList>
             <Arrows>
-                <Text>{'\u2192'}</Text>
-                <Text>{'\u2192'}</Text>
-                <Text>{'\u2192'}</Text>
+                <Text>{'\u2192'}{'\u2192'}{'\u2192'}{'\u2192'}</Text>
             </Arrows>
         </React.Fragment>
     )
